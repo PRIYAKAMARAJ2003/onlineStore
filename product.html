@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - product page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+    
+    <nav class="navbar bg">
+        <ul class="links-container">
+            <li class="link-item"><a href="indexorg.html" class="link" >Home</a></li>
+            <li class="link-item"><a href="#" class="link active">Product</a></li>
+            <li class="link-item">
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="search.html">Furniture</a>
+                        <a href="electronics.html">Electronics</a>
+                        <a href="cosmetics.html">Cosmetics</a>
+                        <!-- Add more categories as needed -->
+                    </div>
+                </div>
+            </li>
+            <li class="link-item"><a href="#" class="link"></a></li>
+        </ul>
+
+        <div class="user-interaction">
+            <!-- <div class="cart">
+                <a href="cart.html"><img src="image/cart.png" class="cart-icon" alt="">
+                <span class="cart-item-count">00</span></a>
+            </div> -->
+            <div class="user">
+                <img src="image/user.png" class="user-icon" alt="">
+            </div>
+        </div>
+    </nav>
+<!-- --------------PRODUCT DETAIL --------------- -->
+    <section class="product-section">
+        <img src="image/product-image.png" class="product-image" alt="">
+        <div class="product-detail">
+            <h1 class="product-title">Sofa</h1>
+            <p class="product-des">Primary Material: Fabric, Upholstery Material: Polyester
+                Warranty: 1 year on product; Seating Capacity: Three seat Arm Style: Square; Item Weight: 46000.0; Special Features: Straight; Form Factor: Futon; Back Style: Cushion Back; Frame Material Type: Wood; Seating Capacity: 3.0; Item Shape: Rectangular</p>
+            <div class="ratings">
+                <img src="image/fill star.png" class="star" alt="">
+                <img src="image/fill star.png" class="star" alt="">
+                <img src="image/fill star.png" class="star" alt="">
+                <img src="image/fill star.png" class="star" alt="">
+                <img src="image/no fill star.png" class="star" alt="">
+                <span class="rating-count">123 reviews</span>
+            </div>
+            <p class="price">Rs.30000</p>
+            <div class="btn-container">
+                <button class="product-btn buy-btn">Buy Now</button>
+                <button class="product-btn cart-btn">Add to cart</button>
+            </div>
+        </div>
+
+    </section>
+
+<!-- --------------REVIEW SECTION --------------- -->
+
+<section class="review-section">
+    <h1 class="section-title">Reviews</h1>
+    <div class="review-container">
+        <div class="review-card">
+            <div class="user-dp" data-ratings="4.9"><img src="image/user 1.png" alt=""></div>
+            <h2 class="review-title">Good quality. Matched my expectation</h2>
+            <p class="review"></p>
+        </div>
+        <div class="review-card">
+            <div class="user-dp" data-ratings="4.9"><img src="image/user 2.png" alt=""></div>
+            <h2 class="review-title">On time delivery</h2>
+            <p class="review"></p>
+        </div>
+        <div class="review-card">
+            <div class="user-dp" data-ratings="4.9"><img src="image/user 3.png" alt=""></div>
+            <h2 class="review-title">Good customer support</h2>
+            <p class="review"></p>
+        </div>
+    </div>
+</section>
+<!-- --------------ADD REVIEW SECTION --------------- -->
+<section class="add-review-section">
+    <h1 class="section-title">add a review</h1>
+    <input type="text" class="review-headline" placeholder="review headline">
+    <textarea placeholder="review" class="review-field"></textarea>
+    <p class="rating-text">how much you liked the product</p>
+    <div class="star-container">
+        <img src="image/no fill star.png" class="rating-star" alt="">
+        <img src="image/no fill star.png" class="rating-star" alt="">
+        <img src="image/no fill star.png" class="rating-star" alt="">
+        <img src="image/no fill star.png" class="rating-star" alt="">
+        <img src="image/no fill star.png" class="rating-star" alt="">
+    </div>
+    <button class="add-review-btn">add review</button>
+</section>
+<!-- --------------SIMILAR SECTION --------------- -->
+    <section class="best-selling-product-section">
+        <h1 class="section-title">Similar products</h1>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="image/product-1.png" class="product-img" alt="">
+                <p class="product-name">Lights</p>
+            </div>
+            <div class="product-card">
+                <img src="image/product-3.png" class="product-img" alt="">
+                <p class="product-name">Storage</p>
+            </div>
+            <div class="product-card">
+                <img src="image/product-4.png" class="product-img" alt="">
+                <p class="product-name">Sofa</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>made by priya kamaraj</footer>
+    <script src="js/product.js"></script>
+    <script src="js/review.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

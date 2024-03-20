@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <section class="form-section">
+        <div class="form-container">
+            <!-- <img src="image/login-bg.png" class="form-img" alt=""> -->
+            <div class="form">
+                <h1 class="form-headind">Welcome back, login here</h1>
+                <form id="signin-form">
+                    <div id="login-section">
+                        <input type="email" autocomplete="off" id="email" placeholder="Your email">
+                        <input type="password" autocomplete="off" id="password" placeholder="Password">
+                        <!-- <span class="error">**this is an error</span> -->
+                        <span class="error" id="error-message" style="display: none;">** Invalid email or password</span>
+                        <!-- <a href="#" id="forgot-password-link">Forgot Password?</a> -->
+                        <button class="submit-btn">Login</button>
+                    </div>
+                    <div id="forgot-password-section " style="display: none;">
+                        <div id="new-password-section">
+                            <input type="email" autocomplete="off" id="forgot-email" placeholder="Your Email">
+                            <input type="password" autocomplete="off" id="new-password" placeholder="New Password">
+                            <input type="password" autocomplete="off" id="confirm-password" placeholder="Confirm New Password">
+                            <a href="index.html"><button class="update-password-btn">Update Password</button></a>
+                        </div>
+                    </div>
+                    
+                </form>
+                <div id="message" style="display: none;"></div>
+                <a href="/signup.html" class="other-form-link">Don't have an account? Create one</a>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/signin.js"></script>
+</body>
+</html>

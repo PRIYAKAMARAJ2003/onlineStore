@@ -1,0 +1,154 @@
+.form-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+}
+
+.form-container{
+    width: 30%;
+    min-width: 300px;
+    height: 80vh;
+    background: #fff;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    box-shadow: 0 0 100px rgba(0,0,0,0.2);
+}
+.form-img{
+    width: 40%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.form{
+    width: 90%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-heading{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* Add this CSS for forgot password section */
+#forgot-password-section {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#new-password-section input {
+    margin: 5px 0;
+}
+
+#forgot-password-section a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+#forgot-password-section a:hover {
+    text-decoration: underline;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #b9b9b9;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 40px;
+    font-family: 'lato', sans-serif;
+    color: #000;
+    outline: none;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: #b9b9b9;
+    text-transform: capitalize;
+}
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus{
+    border: 2px solid #d5be8b;
+}
+
+input:focus::placeholder{
+    color: #d5be8b;
+}
+.error{
+    display: block;
+    font-size: 0.8rem;
+    color: rgb(255,41,41);
+    margin: 5px 0;
+    text-transform: capitalize;
+    font-family: 'lato', sans-serif;
+    user-select: none; 
+    opacity: 0;
+}
+.error.show{
+    opacity: 1;
+}
+.update-password-btn{
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    font-family: 'lato',sans-serif;
+    font-size: 15px;
+    background: #d5be8b;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#tc{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 1px solid #b9b9b9;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#tc:checked{
+    background: #d5be8b;
+}
+#tc::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../image/check.png);
+    background-size: contain;
+    display: none;
+}
+
+#tc:checked::before{
+    display: block;
+}
+.tc-text{
+    margin-left: 5px;
+    font-size: .8rem;
+    font-family: 'lato',sans-serif;
+}
+.tc-text a{
+    color: #000;
+}

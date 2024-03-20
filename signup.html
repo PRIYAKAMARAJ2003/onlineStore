@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form">
+                <h1 class="form-headind">new here, sign up</h1>
+                <form id="signup-form" >
+                <input type="text" autocomplete="off" id="name" placeholder="Your name">
+                <input type="email" autocomplete="off" id="email" placeholder="Your email">
+                <input type="password" autocomplete="off" id="password" placeholder="Password">
+                <input type="number" autocomplete="off" id="phone_no" placeholder="Phone number">
+                <input type="text" autocomplete="off" id="address" placeholder="Your address">
+                <span class="error">**this is an error</span>
+
+                <div>
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text">You agree to our <a href="#">terms and conditions</a></label>
+                </div>
+                <button class="submit-btn">Sign Up</button>
+            </form>
+            <span id="message" class="error" style="display: none;"></span>
+            <a href="index.html" class="other-form-link">Already have an account. Login</a>
+            </div>
+        </div>
+        <img src="image/signup-bg.png" class="form-img" alt="">
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>

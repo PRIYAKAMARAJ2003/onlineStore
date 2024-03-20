@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Admin page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+    <!-- ------------NAVBAR------------- -->
+
+    <nav class="navbar">
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link" >Home</a></li>
+            <!-- <li class="link-item"><a href="product.html" class="link">Product</a></li> -->
+            <li class="link-item">
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="categories.html">Add category</a>
+                        <a href="add-product.html">Add Product</a>
+                        <a href="userDetail.html">See customer details</a>
+                        <a href="order.html">See order details</a>
+                        <!-- Add more categories as needed -->
+                    </div>
+                </div>
+            </li>
+            <li class="link-item">
+                <div class="dropdown">
+                    <button class="dropbtn">Reports</button>
+                    <div class="dropdown-content">
+                        <a href="customerReport.html">Customer Report</a>
+                        <a href="inventoryReport.html">Inventory Report</a>
+                        <a href="salesReport.html">Sales Report</a>
+                        <!-- Add more categories as needed -->
+                    </div>
+                </div>
+            </li>
+            <li class="link-item"><a href="#" class="link"></a></li>
+        </ul>
+
+        <!-- <div class="user-interaction">
+            <div class="user">
+                <img src="image/user.png" class="user-icon" alt="">
+            </div>
+        </div> -->
+
+    </nav>
+    <!-- ------------HEADER------------- -->
+    <header class="header-section">
+        <h1 class="header-heading">Premium <span>Quality</span></h1>
+    </header>
+    <!-- --------------BEST SELLING PRODUCTS-------------- -->
+    <section class="best-selling-product-section">
+        <h1 class="section-title">Best selling product</h1>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="image/product-1.png" class="product-img" alt="">
+                <p class="product-name"><a href="#">Lights</a></p>
+            </div>
+            <div class="product-card">
+                <img src="image/product-2.jpg" class="product-img" alt="">
+                <p class="product-name"><a href="#">Cosmetics</a></p>
+            </div>
+            <div class="product-card">
+                <img src="image/product-4.png" class="product-img" alt="">
+                <p class="product-name"><a href="#">Sofas</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- ------------MID SECTION------------- -->
+    <section class="mid-section">
+        <div class="section-item-container">
+            <img src="image/bg-2.png" class="section-bg" alt="">
+            <div class="section-info">
+                <h1 class="title">Premium quality in <span>affordable </span>price</h1>
+                <p class="info"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------REVIEW ------------- -->
+    <!-- <section class="review-section">
+        <h1 class="section-title">what our <span>customers</span> says about us</h1>
+    </section> -->
+
+    <!-- --------------END SECTION --------------- -->
+<!-- <section class="end-section">
+
+</section> -->
+
+    <footer>made by priya kamaraj</footer>
+    
+    <script src="js/nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="js/signin.js"></script>
+    <script src="js/signup.js"></script> -->
+</body>
+</html>
